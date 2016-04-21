@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC3391F31C718972002783CD /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3391F21C718972002783CD /* Board.m */; };
 		BCEA1BA71C6C3436002A5F7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEA1BA61C6C3436002A5F7D /* main.m */; };
 		BCEA1BAA1C6C3436002A5F7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEA1BA91C6C3436002A5F7D /* AppDelegate.m */; };
 		BCEA1BAD1C6C3437002A5F7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEA1BAC1C6C3437002A5F7D /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		BCEA1BB51C6C3437002A5F7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEA1BB31C6C3437002A5F7D /* LaunchScreen.storyboard */; };
 		BCEA1BC01C6C3437002A5F7D /* Game2048Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEA1BBF1C6C3437002A5F7D /* Game2048Tests.m */; };
 		BCEA1BCB1C6C3437002A5F7D /* Game2048UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEA1BCA1C6C3437002A5F7D /* Game2048UITests.m */; };
+		BCEA1BDE1C6C47B0002A5F7D /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEA1BDD1C6C47B0002A5F7D /* Tile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC3391F11C718972002783CD /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		BC3391F21C718972002783CD /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
 		BCEA1BA21C6C3436002A5F7D /* Game2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEA1BA61C6C3436002A5F7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BCEA1BA81C6C3436002A5F7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		BCEA1BC61C6C3437002A5F7D /* Game2048UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Game2048UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEA1BCA1C6C3437002A5F7D /* Game2048UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Game2048UITests.m; sourceTree = "<group>"; };
 		BCEA1BCC1C6C3437002A5F7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCEA1BDC1C6C47B0002A5F7D /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		BCEA1BDD1C6C47B0002A5F7D /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 				BCEA1BAB1C6C3437002A5F7D /* ViewController.h */,
 				BCEA1BAC1C6C3437002A5F7D /* ViewController.m */,
 				BCEA1BAE1C6C3437002A5F7D /* Main.storyboard */,
+				BCEA1BD81C6C43E8002A5F7D /* Model */,
 				BCEA1BB11C6C3437002A5F7D /* Assets.xcassets */,
 				BCEA1BB31C6C3437002A5F7D /* LaunchScreen.storyboard */,
 				BCEA1BB61C6C3437002A5F7D /* Info.plist */,
@@ -138,6 +145,17 @@
 				BCEA1BCC1C6C3437002A5F7D /* Info.plist */,
 			);
 			path = Game2048UITests;
+			sourceTree = "<group>";
+		};
+		BCEA1BD81C6C43E8002A5F7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCEA1BDC1C6C47B0002A5F7D /* Tile.h */,
+				BCEA1BDD1C6C47B0002A5F7D /* Tile.m */,
+				BC3391F11C718972002783CD /* Board.h */,
+				BC3391F21C718972002783CD /* Board.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +294,8 @@
 				BCEA1BAD1C6C3437002A5F7D /* ViewController.m in Sources */,
 				BCEA1BAA1C6C3436002A5F7D /* AppDelegate.m in Sources */,
 				BCEA1BA71C6C3436002A5F7D /* main.m in Sources */,
+				BCEA1BDE1C6C47B0002A5F7D /* Tile.m in Sources */,
+				BC3391F31C718972002783CD /* Board.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +519,7 @@
 				BCEA1BD11C6C3437002A5F7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCEA1BD21C6C3437002A5F7D /* Build configuration list for PBXNativeTarget "Game2048Tests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +528,7 @@
 				BCEA1BD41C6C3437002A5F7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCEA1BD51C6C3437002A5F7D /* Build configuration list for PBXNativeTarget "Game2048UITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +537,7 @@
 				BCEA1BD71C6C3437002A5F7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

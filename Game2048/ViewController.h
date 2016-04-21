@@ -7,9 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Board.h"
+
+typedef NS_ENUM(NSInteger,Direction)
+{
+    DirectionLeft=1,
+    DirectionRight,
+    DirectionUp,
+    DirectionDown
+    
+};
+
 
 @interface ViewController : UIViewController
 
+@property(strong,nonatomic)Board *board;
 
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *btnTiles;
+
+-(void)initBoard;
 @end
 
