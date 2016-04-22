@@ -18,7 +18,7 @@
 
 
 
--(instancetype)initWithTilesCount:(NSUInteger)count
+-(instancetype)initWithTilesCount:(NSInteger)count
 {
     self=[super init];
     if (self)
@@ -52,7 +52,7 @@
                 [self addTile:[[Tile alloc]init]];
             }
             
-           //  NSLog(@"Tile:%@",self.tiles[i]);
+           
         }
         
 //        int r3=6;

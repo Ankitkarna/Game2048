@@ -15,7 +15,7 @@
 
 -(void)addTile:(Tile *)tile atPosition:(int)position;
 -(void)addTile:(Tile *)tile;
--(instancetype)initWithTilesCount:(NSUInteger)count;
+-(instancetype)initWithTilesCount:(NSInteger)count;
 -(Tile *)tileAtPosition:(NSInteger)pos;
 -(BOOL)moveTileFromPos:(NSInteger)pos1 toPos:(NSInteger)pos2;
 -(void)generateRandomTile;

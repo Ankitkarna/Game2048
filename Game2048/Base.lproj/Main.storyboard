@@ -251,33 +251,62 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUr-GZ-tra">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game2048" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wf0-eA-o1s">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kfo-Rt-tKh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1ct-wm-CDx"/>
+                            <constraint firstItem="hUr-GZ-tra" firstAttribute="top" secondItem="kfo-Rt-tKh" secondAttribute="bottom" constant="18" id="DCj-be-ZdH"/>
                             <constraint firstItem="kfo-Rt-tKh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gep-jN-cSz"/>
+                            <constraint firstItem="kfo-Rt-tKh" firstAttribute="top" secondItem="wf0-eA-o1s" secondAttribute="bottom" constant="8" id="K0j-ev-bHs"/>
+                            <constraint firstItem="wf0-eA-o1s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ONE-Vw-pYr"/>
+                            <constraint firstItem="hUr-GZ-tra" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tnS-Bt-1vW"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="kfo-Rt-tKh"/>
+                                <exclude reference="hUr-GZ-tra"/>
+                                <exclude reference="wf0-eA-o1s"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="1ct-wm-CDx"/>
                                 <exclude reference="Gep-jN-cSz"/>
+                                <exclude reference="K0j-ev-bHs"/>
+                                <exclude reference="ONE-Vw-pYr"/>
+                                <exclude reference="DCj-be-ZdH"/>
+                                <exclude reference="tnS-Bt-1vW"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="kfo-Rt-tKh"/>
+                                <include reference="hUr-GZ-tra"/>
+                                <include reference="wf0-eA-o1s"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="1ct-wm-CDx"/>
                                 <include reference="Gep-jN-cSz"/>
+                                <include reference="K0j-ev-bHs"/>
+                                <include reference="ONE-Vw-pYr"/>
+                                <include reference="DCj-be-ZdH"/>
+                                <include reference="tnS-Bt-1vW"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="gameView" destination="kfo-Rt-tKh" id="XaW-6D-Xyy"/>
+                        <outlet property="scoreLabel" destination="hUr-GZ-tra" id="0iW-aY-2sd"/>
                         <outletCollection property="btnTiles" destination="mRn-35-fWs" id="aOC-ri-TyY"/>
                         <outletCollection property="btnTiles" destination="zAL-IW-Hbh" id="mL2-up-fkh"/>
                         <outletCollection property="btnTiles" destination="4qe-Xy-1Lf" id="Ksf-dY-fMU"/>

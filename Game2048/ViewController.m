@@ -7,12 +7,17 @@
 //
 
 #import "ViewController.h"
+#import "Player.h"
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIView *gameView;
 @property(nonatomic)Direction swipeDirection;
+@property(nonatomic,strong)Player *player;
+
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+
 
 @end
 
@@ -21,6 +26,10 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.player=[[Player alloc]init];
+    self.player.score=0;
+    
     [self addSwipeGesture];
     [self initBoard];
     [self updateUI];
@@ -34,7 +43,7 @@
 -(void)initBoard
 {
     self.board=[[Board alloc]initWithTilesCount:[self.btnTiles count]];
-    NSLog(@"Tiles:%lu",[self.btnTiles count]);
+   
 }
 
 -(void)updateUI
@@ -59,6 +68,7 @@
         
         
         [tileBtn setEnabled:NO];
+        self.scoreLabel.text=[NSString stringWithFormat:@"Score:%lu",self.player.score];
         
         
         
@@ -222,6 +232,8 @@
                             [self.board moveTileFromPos:(currentIndex) toPos:nearIndex];
                         }
                         
+                        self.player.score++;
+                        
                       
                     }
                     
@@ -322,6 +334,7 @@
                         {
                             [self.board moveTileFromPos:(currentIndex) toPos:nearIndex];
                         }
+                        self.player.score++;
                       
                     }
                     
@@ -428,6 +441,8 @@
                         {
                             [self.board moveTileFromPos:(currentIndex) toPos:nearIndex];
                         }
+                        
+                        self.player.score++;
                      
                     }
                     
@@ -527,6 +542,8 @@
                        {
                            [self.board moveTileFromPos:(currentIndex) toPos:nearIndex];
                        }
+                       
+                       self.player.score++;
                    
                    }
                    

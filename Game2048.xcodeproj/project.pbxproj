@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BC3391F31C718972002783CD /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = BC3391F21C718972002783CD /* Board.m */; };
+		BCE755F21CC8D5A700F0731D /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE755F11CC8D5A700F0731D /* Player.m */; };
 		BCEA1BA71C6C3436002A5F7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEA1BA61C6C3436002A5F7D /* main.m */; };
 		BCEA1BAA1C6C3436002A5F7D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEA1BA91C6C3436002A5F7D /* AppDelegate.m */; };
 		BCEA1BAD1C6C3437002A5F7D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BCEA1BAC1C6C3437002A5F7D /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		BC3391F11C718972002783CD /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
 		BC3391F21C718972002783CD /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
+		BCE755F01CC8D5A700F0731D /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		BCE755F11CC8D5A700F0731D /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		BCEA1BA21C6C3436002A5F7D /* Game2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Game2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEA1BA61C6C3436002A5F7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BCEA1BA81C6C3436002A5F7D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -154,6 +157,8 @@
 				BCEA1BDD1C6C47B0002A5F7D /* Tile.m */,
 				BC3391F11C718972002783CD /* Board.h */,
 				BC3391F21C718972002783CD /* Board.m */,
+				BCE755F01CC8D5A700F0731D /* Player.h */,
+				BCE755F11CC8D5A700F0731D /* Player.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 				BCEA1BAA1C6C3436002A5F7D /* AppDelegate.m in Sources */,
 				BCEA1BA71C6C3436002A5F7D /* main.m in Sources */,
 				BCEA1BDE1C6C47B0002A5F7D /* Tile.m in Sources */,
+				BCE755F21CC8D5A700F0731D /* Player.m in Sources */,
 				BC3391F31C718972002783CD /* Board.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Game2048/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ebpearls.Game2048;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Game2048/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ebpearls.Game2048;
 				PRODUCT_NAME = "$(TARGET_NAME)";
